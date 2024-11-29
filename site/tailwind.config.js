@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors : {
         primary : {
-          blue : "#005ca7",
+          blue : "#0801A6",
           purple : "#937AFA"
         },
         complementary: { 
