@@ -1,0 +1,26 @@
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+
+
+export const Button = (props) => {
+    return (
+        <button className={`flex justify-center items-center rounded-[30px] border border-[#937AFA] text-primary-purple h-[50px] w-[306px] hover:bg-primary-purple hover:text-white hover:border-complementary-white  ${props.styles}`}>
+            <div className="flex items-center justify-center gap-5 ">
+                {props.children}
+                <div className="flex items-center justify-center -rotate-45 border rounded-full  border-primary-purple h-9 w-9 text-4  hover:border-complementary-white">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                </div>
+            </div>
+        </button>
+    )
+}
+
+
+export const ButtonLogin = (props) => {
+    return ( 
+        <button className={` rounded-full border-primary-purple border w-12 h-12 text-complementary-white hover:text-primary-purple ${props.styles}`}>
+            {props.children}
+        </button>
+    )
+}
