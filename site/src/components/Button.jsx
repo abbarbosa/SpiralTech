@@ -8,7 +8,7 @@ export const Button = (props) => {
         <button className={`flex justify-center items-center rounded-[30px] border border-[#937AFA] text-primary-purple h-[50px] w-[306px] hover:bg-primary-purple hover:text-white  ${props.styles}`}>
             <div className="flex items-center justify-center gap-5 ">
                 {props.children}
-                <div className="flex items-center justify-center -rotate-45 border rounded-full  border-primary-purple h-9 w-9 text-4  hover:border-complementary-white">
+                <div className="flex items-center justify-center -rotate-45 border rounded-full  border-primary-purple h-9 w-9 text-4 ">
                     <FontAwesomeIcon icon={faArrowRight} />
                 </div>
             </div>
