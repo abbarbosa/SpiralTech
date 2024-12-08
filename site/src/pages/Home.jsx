@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import homeImage from "../assets/homeImage.png"
 import { Button, ButtonLogin } from "../components/Button"
 import { Header } from "../components/Header"
-import { faLaptop, faSeedling, faThumbsUp, faUser } from "@fortawesome/free-solid-svg-icons"
+import { faLaptop, faThumbsUp, faUser } from "@fortawesome/free-solid-svg-icons"
 import { ReactComponent as Abstracao } from "../assets/abstracao.svg"
 import { ReactComponent as Voltair } from "../assets/voltair.svg"
 import { ReactComponent as NevesAdvogados } from "../assets/nevesAdvogados.svg"
@@ -18,6 +18,11 @@ import LightImage from "../assets/lightImage.png"
 import DigitalImage from "../assets/DigitalImage.png"
 import { Footer } from "../components/Footer"
 
+import { ReactComponent as Like } from "../assets/like.svg"
+import { ReactComponent as Computer } from "../assets/computer.svg"
+import { ReactComponent as Plant } from "../assets/plant.svg"
+
+
 export const Home = () => {
     return (
         <div className="bg-primary-blue">
@@ -25,113 +30,152 @@ export const Home = () => {
                 className="h-screen flex items-center bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${homeImage})` }}
             >
-
                 <div className="absolute top-4 right-4 z-10">
                     <Link to="/login">
                         <ButtonLogin>
                             <FontAwesomeIcon icon={faUser} />
                         </ButtonLogin>
                     </Link>
-
                 </div>
 
-                <div>
-                    <div className="flex w-[100%] flex-col-reverse items-end">
-                        <div className="flex gap-[20px] justify-center">
-                            <Header styles="ml-[120px]" />
-                            <div className="flex flex-col gap-[45px] items-start">
-                                <h1 className="text-complementary-white text-[60px]">
-                                    Transformando <br />
-                                    <span className="font-semibold">tecnologia </span>
-                                    em <br />
-                                    <span className="font-semibold">solução</span>!
-                                </h1>
-                                <Link to="/nossas-solucoes">
-                                    <Button styles="bg-complementary-white">
-                                        Saiba mais
-                                    </Button>
-                                </Link>
-                            </div>
-                        </div>
+
+                <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-between px-4 md:px-16">
+
+                    <div className="w-full md:w-auto flex justify-center md:justify-start">
+                        <Header />
+                    </div>
+
+                    <div className="flex flex-col gap-[45px] items-center md:items-end w-full md:w-auto md:ml-8">
+                        <h1 className="text-complementary-white text-[40px] md:text-[60px] text-center md:text-end">
+                            Transformando <br />
+                            <span className="font-semibold">tecnologia </span>
+                            em <br />
+                            <span className="font-semibold">solução</span>!
+                        </h1>
+                        <Link to="/nossas-solucoes">
+                            <Button styles="bg-complementary-white">
+                                Saiba mais
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </div>
+
+
+
             <div className="items-center justify-center flex">
-                <div className=" h-[120px] w-[80%] items-center justify-center rounded-[20px] border bg-primary-blue mt-[-20px] flex gap-[70px]">
-                    <Abstracao className="w-[157px]" />
-                    <Voltair className="w-[157px]" />
-                    <TechConnect className="w-[157px]" />
-                    <NevesAdvogados className="w-[157px]" />
+                <div className="md:block hidden">
+                    <div className=" items-center justify-center rounded-[20px] border h-[120px] w-[1000px] bg-primary-blue mt-[-20px] gap-[70px] flex">
+                        <Abstracao className="w-[157px]" />
+                        <Voltair className="w-[157px]" />
+                        <TechConnect className="w-[157px]" />
+                        <NevesAdvogados className="w-[157px]" />
+                    </div>
                 </div>
             </div>
 
-            <div className="items-center justify-center flex flex-col mt-[120px] gap-[60px]">
-                <h1 className="text-[48px] font-semibold text-center text-complementary-white">Nossa missão</h1>
-                <div className="relative h-[434px] w-[80%] rounded-[20px] overflow-hidden flex items-center justify-center">
+
+            <div className="flex flex-col items-center mt-[120px] gap-[60px] px-4 md:px-8">
+                <h1 className="text-[24px] sm:text-[32px] md:text-[48px] lg:text-[60px] font-semibold text-center text-complementary-white">
+                    Nossa missão
+                </h1>
+                <div className="relative h-auto md:h-[434px] w-full max-w-[1200px] rounded-[20px] overflow-hidden flex items-center justify-center">
                     <div className="absolute inset-0 bg-complementary-white bg-opacity-20 filter blur-[17.5px]"></div>
-                    <div className="relative z-10 flex justify-between items-center gap-[20px] w-[90%]">
+                    <div className="relative z-10 flex flex-col md:flex-row justify-between items-center gap-[30px] md:gap-[20px] w-full px-4 md:px-8">
+
 
                         <div className="flex flex-col items-center justify-center text-center">
-                            <FontAwesomeIcon icon={faSeedling} className="text-[48px] text-complementary-white" />
-                            <h1 className="text-complementary-white text-[24px] font-semibold">Sustentabilidade e <br /> Ética</h1>
-                            <p className="text-complementary-white text-[18px]">
-                                Promover <span className="font-semibold">práticas <br /> responsáveis</span>  no uso da <br /> tecnologia, respeitando  <span className="font-semibold"> princípios éticos</span> e contribuindo para a <span className="font-semibold"> sustentabilidade</span>.
+                            <Plant className="h-[40px] sm:h-[50px] md:h-[55px]" />
+                            <h1 className="text-complementary-white text-[18px] sm:text-[20px] md:text-[24px] font-semibold">
+                                Sustentabilidade e <br /> Ética
+                            </h1>
+                            <p className="text-complementary-white text-[14px] sm:text-[16px] md:text-[18px]">
+                                Promover <span className="font-semibold">práticas <br /> responsáveis</span> no uso da <br /> tecnologia, respeitando <span className="font-semibold">princípios éticos</span> e contribuindo para a <span className="font-semibold">sustentabilidade</span>.
                             </p>
                         </div>
-                        <div className="w-[2px] h-[100px] bg-gray-300 mx-4"></div>
+
+
+                        <div className="hidden md:block w-[2px] h-[100px] bg-gray-300"></div>
+
+
                         <div className="flex flex-col items-center justify-center text-center">
-                            <FontAwesomeIcon icon={faLaptop} className="text-[48px] text-complementary-white" />
-                            <h1 className="text-complementary-white text-[24px] font-semibold">Nosso Propósito <br /> Central</h1>
-                            <p className="text-complementary-white text-[18px]">
-                                Transformar a <span className="font-semibold" >experiência digital</span> através de <span className="font-semibold">soluções tecnológicas</span> inovadoras.
+                            <Computer className="w-[50px] sm:w-[55px] md:w-[60px] h-[40px] sm:h-[50px] md:h-[55px]" />
+                            <h1 className="text-complementary-white text-[18px] sm:text-[20px] md:text-[24px] font-semibold">
+                                Nosso Propósito <br /> Central
+                            </h1>
+                            <p className="text-complementary-white text-[14px] sm:text-[16px] md:text-[18px]">
+                                Transformar a <span className="font-semibold">experiência digital</span> através de <span className="font-semibold">soluções tecnológicas</span> inovadoras.
                             </p>
                         </div>
-                        <div className="w-[2px] h-[100px] bg-gray-300 mx-4"></div>
+
+
+                        <div className="hidden md:block w-[2px] h-[100px] bg-gray-300"></div>
+
+
                         <div className="flex flex-col items-center justify-center text-center">
-                            <FontAwesomeIcon icon={faThumbsUp} className="text-[48px] text-complementary-white" />
-                            <h1 className="text-complementary-white text-[24px] font-semibold">Satisfação do <br /> Cliente</h1>
-                            <p className="text-complementary-white text-[18px]">
-                                Foco em  <span className="font-semibold">entregar <br /> experiências</span> que superem as <br /> <span className="font-semibold">expectativas</span>, garantindo a  <span className="font-semibold">qualidade</span> e a <span className="font-semibold"> eficiência</span> das soluções.
+                            <h1 className="text-complementary-white text-[18px] sm:text-[20px] md:text-[24px] font-semibold">
+                                Satisfação do <br /> Cliente
+                            </h1>
+                            <p className="text-complementary-white text-[14px] sm:text-[16px] md:text-[18px]">
+                                Foco em <span className="font-semibold">entregar <br /> experiências</span> que superem as <br /> <span className="font-semibold">expectativas</span>, garantindo a <span className="font-semibold">qualidade</span> e a <span className="font-semibold">eficiência</span> das soluções.
                             </p>
                         </div>
                     </div>
                 </div>
-
             </div>
 
-            <div className="items-center justify-center flex flex-col mt-[120px] gap-[60px]">
-                <h1 className="text-[48px] font-semibold text-center text-complementary-white">Cases de sucesso</h1>
 
-                <div className="flex gap-[45px]">
-                    <div
-                        className="h-[510px] w-[336px] rounded-[20px] items-end flex justify-end"
-                        style={{ backgroundImage: `url(${TechMockup})` }} >
-                        <div className="h-[175px] w-[100%] bg-complementary-black rounded-bl-[20px] rounded-br-[20px] justify-center flex items-center ">
+            <div className="items-center justify-center flex flex-col mt-[120px] gap-[60px]">
+                <h1 className="text-[32px] md:text-[48px] lg:text-[60px] font-semibold text-center md:text-left text-complementary-white">Cases de sucesso</h1>
+
+                <div className="flex flex-wrap gap-[30px] justify-center lg:justify-start">
+
+                    {/* <div
+                        className="h-[510px] w-[90%] sm:w-[336px] rounded-[20px] items-end flex justify-end"
+                        style={{ backgroundImage: `url(${TechMockup})` }}
+                    >
+                        <div className="h-[175px] w-full bg-complementary-black rounded-bl-[20px] rounded-br-[20px] justify-center flex items-center">
                             <p className="text-complementary-white text-[18px] text-center">Implementação de soluções de cibersegurança para uma rede social</p>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div
-                        className="h-[510px] w-[336px] rounded-[20px] items-end flex justify-end"
-                        style={{ backgroundImage: `url(${VoltairMockup})` }} >
-                        <div className="h-[175px] w-[100%] bg-complementary-black rounded-bl-[20px] rounded-br-[20px] justify-center flex items-center ">
+                        className="h-[510px] w-[90%] sm:w-[336px] rounded-[20px] items-end flex justify-end"
+                        style={{ backgroundImage: `url(${TechMockup})` }}
+                    >
+                        <div class="relative overflow-hidden w-[339px] h-[175px] bg-[#1E1E1E] bg-opacity-30 rounded-bl-[20px] rounded-br-[20px]">
+                            <div class="absolute inset-0 bg-[#1E1E1E] bg-opacity-30 filter blur-[17.5px]"></div>
+
+                            <p className="text-complementary-white text-[18px] text-center mt-10">Implementação de soluções de cibersegurança para uma rede social</p>
+                        </div>
+                    </div>
+
+
+
+                    <div
+                        className="h-[510px] w-[90%] sm:w-[336px] rounded-[20px] items-end flex justify-end"
+                        style={{ backgroundImage: `url(${VoltairMockup})` }}
+                    >
+                        <div className="h-[175px] w-full bg-complementary-black rounded-bl-[20px] rounded-br-[20px] justify-center flex items-center">
                             <p className="text-complementary-white text-[18px] text-center">1° aplicativo de recarga para carros elétricos.</p>
                         </div>
                     </div>
+
+
                     <div
-                        className="h-[510px] w-[336px] rounded-[20px] items-end flex justify-end"
-                        style={{ backgroundImage: `url(${GetoMockup})` }} >
-                        <div className="h-[175px] w-[100%] bg-complementary-black rounded-bl-[20px] rounded-br-[20px] justify-center flex items-center ">
+                        className="h-[510px] w-[90%] sm:w-[336px] rounded-[20px] items-end flex justify-end"
+                        style={{ backgroundImage: `url(${GetoMockup})` }}
+                    >
+                        <div className="h-[175px] w-full bg-complementary-black rounded-bl-[20px] rounded-br-[20px] justify-center flex items-center">
                             <p className="text-complementary-white text-[18px] text-center">Desenvolvimento de uma plataforma de vendas online para uma loja de moda ESG.</p>
                         </div>
                     </div>
-
                 </div>
-
             </div>
 
+
             <div className="items-center justify-center flex flex-col mt-[120px] gap-[60px]">
-                <h1 className="text-[48px] font-semibold text-center text-complementary-white">Premiações</h1>
+                <h1 className="text-[32px] md:text-[48px] lg:text-[60px] font-semibold text-center md:text-left text-complementary-white">Premiações</h1>
 
                 <div
                     className="h-[342px] w-[1040px] rounded-[20px]  items-start flex justify-center pl-[100px] flex-col gap-10"
@@ -159,7 +203,7 @@ export const Home = () => {
                 </div>
 
                 <div className="items-center justify-center flex flex-col mt-[120px] gap-[60px] mb-[120px]">
-                    <h1 className="text-[48px] font-semibold text-center text-complementary-white">Se interessou?</h1>
+                    <h1 className="text-[32px] md:text-[48px] lg:text-[60px] font-semibold text-center md:text-left text-complementary-white">Se interessou?</h1>
                     <Button>Entrar em contato</Button>
                 </div>
             </div>
