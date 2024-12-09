@@ -3,13 +3,14 @@ module.exports = {
   content: ["./src/**/*.{jsx,js,tsx,ts}", "./index.html"],
   theme: {
     fontFamily : {
-      sans : ["Poppins", "sans-serif"]
+      sans : ["Poppins", "sans-serif"],
+      dynapuff: ['DynaPuff', 'cursive']
     },
     extend: {
       colors : {
         primary : {
           blue : "#0801A6",
-          purple : "#937AFA"
+          purple : "#937AFA",
         },
         complementary: { 
           white : "#EFEFEF",

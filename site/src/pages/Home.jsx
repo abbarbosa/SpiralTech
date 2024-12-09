@@ -24,6 +24,9 @@ import { ReactComponent as Plant } from "../assets/plant.svg"
 
 
 export const Home = () => {
+
+
+    
     return (
         <div className="bg-primary-blue">
             <div
