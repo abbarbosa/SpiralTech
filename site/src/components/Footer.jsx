@@ -51,3 +51,11 @@ export const Footer = () => {
         </div>
     )
 }
+
+export const LandingFotter = () => {
+return(
+    <div className="bg-[#700561] w-screen h-[200px] rounded-t-[20px] justify-center items-center flex">
+        <h1 className="font-semibold text-[16px] text-complementary-white font-dynapuff">Uma campanha desenvolvida por Spiral Tech - 2024 </h1>
+    </div>
+)
+}

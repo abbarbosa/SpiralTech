@@ -16,7 +16,18 @@ export const Button = (props) => {
     )
 }
 
-
+export const ButtonLanding = (props) => {
+    return (
+        <button className={`flex justify-center items-center rounded-[30px] border border-[#700561] text-[#700561] h-[50px] w-[306px] hover:[#700561] hover:text-white hover:bg-[#700561]  ${props.styles}`}>
+            <div className="flex items-center justify-center gap-5 ">
+                {props.children}
+                <div className={`flex items-center justify-center -rotate-45 border rounded-full hover:border-transparent  border-[#700561] h-9 w-9 text-4 bg-transparent ${props.styles}`}>
+                    <FontAwesomeIcon icon={faArrowRight} />
+                </div>
+            </div>
+        </button>
+    )
+}
 
 
 export const ButtonLogin = (props) => {
