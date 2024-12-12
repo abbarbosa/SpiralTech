@@ -6,6 +6,12 @@ import { ButtonLogin } from "../components/Button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser } from "@fortawesome/free-solid-svg-icons"
 
+import { ReactComponent as Code } from "../assets/Code Learner.svg"
+import { ReactComponent as Security } from "../assets/Security Shield.svg"
+import { ReactComponent as SocialMedia } from "../assets/Social Media.svg"
+import { ReactComponent as Inventing } from "../assets/Inventing.svg"
+import { ReactComponent as AnalyseData } from "../assets/Analyze Data.svg"
+
 export const Solutions = (props) => {
     return (
         <div className="bg-primary-blue">
@@ -36,6 +42,43 @@ export const Solutions = (props) => {
                             <p className="text-[27px] text-complementary-white">Sua <span className="font-semibold">jornada digital</span> <br />começa com as <br /><span className="font-semibold">nossas soluções</span> </p>
                         </div>
 
+                    </div>
+                </div>
+
+            </div>
+            <div >
+                <div className="flex items-center justify-center gap-[180px]">
+                    <div className="my-[100px] flex flex-col justify-center items-center">
+                        <Code className="h-[140px]" />
+                        <h1 className="text-[27px] font-light text-complementary-white">Desenvolvimento de Software</h1>
+                        <p className="text-complementary-white text-center"> <span className="font-semibold">Processo de criação</span>, <br /> <span className="font-semibold">teste </span> e <span className="font-semibold" >manutenção </span>de <br /> <span className="font-semibold">aplicativos</span> , sistemas e <span className="font-semibold">plataformas</span>. <br /> Envolve desde a <span className="font-semibold">concepação</span > da <br />ideia até a <span className="font-semibold"> programação</span>.</p>
+                    </div>
+                    <div className="my-[100px] flex flex-col justify-center items-center">
+                        <Security className="h-[140px]" />
+                        <h1 className="text-[27px] font-light text-complementary-white">Cibersegurança</h1>
+                        <p className="text-complementary-white text-center">Envolve a  <span className="font-semibold">proteção</span> <br /> de sistemas, redes e <span className="font-semibold"> dados <br /> contra ataques </span> <br /> cibernéticos e  <span className="font-semibold">acessos</span> <br />não autorizados.</p>
+                    </div>
+                    <div className="my-[100px] flex flex-col justify-center items-center">
+                        <SocialMedia className="h-[140px]" />
+                        <h1 className="text-[27px] font-light text-complementary-white  text-center
+                    ">Consultoria <br />em TI</h1>
+                        <p className="text-complementary-white text-center">Serviço <span className="font-semibold">especializado</span> que <br />  <span className="font-semibold"> auxilia empresas </span> na <br /> escolha e <br /> <span className="font-semibold">implementação</span> de  <br /><span className="font-semibold">soluções tecnológicas</span>.</p>
+                    </div>
+                </div>
+
+                <div className="flex items-center justify-center gap-[180px]">
+                    <div className="my-[100px] flex flex-col justify-center items-center">
+                        <Inventing className="h-[140px]" />
+                        <h1 className="text-[27px] font-light text-complementary-white">Gestão de Projetos</h1>
+                        <p className="text-complementary-white text-center"> <span className="font-semibold">Planejamento</span>, execução  <br />  e
+                            <span className="font-semibold"> monitoramento </span> de  <br /> atividades para<span className="font-semibold" > alcançar <br /> metas
+                            </span> dentro de  <span className="font-semibold">prazos </span> e <br /><span className="font-semibold" >orçamentos</span></p>
+                    </div>
+
+                    <div className="my-[100px] flex flex-col justify-center items-center">
+                        <AnalyseData className="h-[140px]" />
+                        <h1 className="text-[27px] font-light text-complementary-white">Gestão de Projetos</h1>
+                        <p className="text-complementary-white text-center"><span className="font-semibold">Processo</span> de coleta <span className="font-semibold"> processamento</span> e <span className="font-semibold">interpretação</span></p>
                     </div>
                 </div>
 
