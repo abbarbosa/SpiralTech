@@ -9,9 +9,9 @@ import { ReactComponent as NevesAdvogados } from "../assets/nevesAdvogados.svg"
 import { ReactComponent as TechConnect } from "../assets/techConnect.svg"
 import { Link } from "react-router-dom"
 
-import VoltairMockup from "../assets/voltairmockup.png"
-import GetoMockup from "../assets/getomockup.png"
-import TechMockup from "../assets/techmockup.png"
+import VoltairMockup from "../assets/Group 49.png"
+import GetoMockup from "../assets/Group 50.png"
+import TechMockup from "../assets/Group 51.png"
 
 import CodeImage from "../assets/codeImage.png"
 import LightImage from "../assets/lightImage.png"
@@ -26,7 +26,7 @@ import { ReactComponent as Plant } from "../assets/plant.svg"
 export const Home = () => {
 
 
-    
+
     return (
         <div className="bg-primary-blue">
             <div
@@ -132,47 +132,9 @@ export const Home = () => {
                 <h1 className="text-[32px] md:text-[48px] lg:text-[60px] font-semibold text-center md:text-left text-complementary-white">Cases de sucesso</h1>
 
                 <div className="flex flex-wrap gap-[30px] justify-center lg:justify-start">
-
-                    {/* <div
-                        className="h-[510px] w-[90%] sm:w-[336px] rounded-[20px] items-end flex justify-end"
-                        style={{ backgroundImage: `url(${TechMockup})` }}
-                    >
-                        <div className="h-[175px] w-full bg-complementary-black rounded-bl-[20px] rounded-br-[20px] justify-center flex items-center">
-                            <p className="text-complementary-white text-[18px] text-center">Implementação de soluções de cibersegurança para uma rede social</p>
-                        </div>
-                    </div> */}
-
-                    <div
-                        className="h-[510px] w-[90%] sm:w-[336px] rounded-[20px] items-end flex justify-end"
-                        style={{ backgroundImage: `url(${TechMockup})` }}
-                    >
-                        <div class="relative overflow-hidden w-[339px] h-[175px] bg-[#1E1E1E] bg-opacity-30 rounded-bl-[20px] rounded-br-[20px]">
-                            <div class="absolute inset-0 bg-[#1E1E1E] bg-opacity-30 filter blur-[17.5px]"></div>
-
-                            <p className="text-complementary-white text-[18px] text-center mt-10">Implementação de soluções de cibersegurança para uma rede social</p>
-                        </div>
-                    </div>
-
-
-
-                    <div
-                        className="h-[510px] w-[90%] sm:w-[336px] rounded-[20px] items-end flex justify-end"
-                        style={{ backgroundImage: `url(${VoltairMockup})` }}
-                    >
-                        <div className="h-[175px] w-full bg-complementary-black rounded-bl-[20px] rounded-br-[20px] justify-center flex items-center">
-                            <p className="text-complementary-white text-[18px] text-center">1° aplicativo de recarga para carros elétricos.</p>
-                        </div>
-                    </div>
-
-
-                    <div
-                        className="h-[510px] w-[90%] sm:w-[336px] rounded-[20px] items-end flex justify-end"
-                        style={{ backgroundImage: `url(${GetoMockup})` }}
-                    >
-                        <div className="h-[175px] w-full bg-complementary-black rounded-bl-[20px] rounded-br-[20px] justify-center flex items-center">
-                            <p className="text-complementary-white text-[18px] text-center">Desenvolvimento de uma plataforma de vendas online para uma loja de moda ESG.</p>
-                        </div>
-                    </div>
+                    <img src={VoltairMockup} className="h-[650px]" alt="" />
+                    <img src={GetoMockup} className="h-[650px]" alt="" />
+                    <img src={TechMockup} className="h-[650px]" alt="" />
                 </div>
             </div>
 

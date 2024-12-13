@@ -12,6 +12,8 @@ import { ReactComponent as SocialMedia } from "../assets/Social Media.svg"
 import { ReactComponent as Inventing } from "../assets/Inventing.svg"
 import { ReactComponent as AnalyseData } from "../assets/Analyze Data.svg"
 
+import { ReactComponent as MachineLearning } from "../assets/Machine Learning.svg"
+
 export const Solutions = (props) => {
     return (
         <div className="bg-primary-blue">
@@ -77,8 +79,16 @@ export const Solutions = (props) => {
 
                     <div className="my-[100px] flex flex-col justify-center items-center">
                         <AnalyseData className="h-[140px]" />
-                        <h1 className="text-[27px] font-light text-complementary-white">Gestão de Projetos</h1>
-                        <p className="text-complementary-white text-center"><span className="font-semibold">Processo</span> de coleta <span className="font-semibold"> processamento</span> e <span className="font-semibold">interpretação</span></p>
+                        <h1 className="text-[27px] font-light text-complementary-white text-center">Análise  <br />de Dados</h1>
+                        <p className="text-complementary-white text-center"><span className="font-semibold">Processo</span> de coleta, <br /> <span className="font-semibold"> processamento</span> e <br /><span className="font-semibold">interpretação</span> de dados <br /> para <span className="font-semibold">gerar insights</span> que  <br /><span className="font-semibold">embasam</span> desições <br /> <span className="font-semibold">estratégicas</span>
+                        </p>
+                    </div>
+
+                    <div className="my-[100px] flex flex-col justify-center items-center">
+                        <MachineLearning className="h-[140px]" />
+                        <h1 className="text-[27px] font-light text-complementary-white text-center">Inteligência <br /> Artificial</h1>
+                        <p className="text-complementary-white text-center">Área da<span className="font-semibold">tecnologia</span> que <br /> <span className="font-semibold">desenvolve sistemas</span> <br /> capazes de <span className="font-semibold">realizar <br />tarefas</span> que simulam a <br /> <span className="font-semibold">inteligência humana</span>
+                        </p>
                     </div>
                 </div>
 

@@ -1,4 +1,4 @@
-import { Button, ButtonLanding, ButtonLogin } from "../components/Button";
+import { Button, ButtonExit, ButtonLanding, ButtonLogin } from "../components/Button";
 import LandingImage from "../assets/LandingImage.png";
 import carrouselImage from "../assets/carouselPhoto.png";
 import gameLogo from "../assets/gameLogo.png";
@@ -7,6 +7,7 @@ import {
     faBook,
     faBowlFood,
     faCubes,
+    faDoorOpen,
     faHandshakeAngle,
     faMobile,
     faPumpSoap,
@@ -14,6 +15,9 @@ import {
     faSquarePlus,
 } from "@fortawesome/free-solid-svg-icons";
 import { LandingFotter } from "../components/Footer";
+import { Link } from "react-router-dom";
+
+
 
 export const Landing = () => {
     const scrollToSection = (id) => {
@@ -25,11 +29,13 @@ export const Landing = () => {
 
     return (
         <div className="gap-[120px] flex flex-col">
-            {/* Header */}
+
             <div
                 className="h-screen flex items-start bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${LandingImage})` }}
             >
+
+
                 <div className="bg-complementary-white h-[125px] w-screen rounded-b-[20px] flex gap-[50px] items-center pl-[120px] text-[#700561] font-dynapuff text-[30px] justify-between">
                     <div className="gap-[50px] flex">
                         <button
@@ -51,10 +57,21 @@ export const Landing = () => {
                             <h1>Nosso Jogo</h1>
                         </button>
                     </div>
+
+                    <div className="mr-[50px]">
+                        <Link to="/">
+                            <ButtonExit />
+                        </Link>
+
+                    </div>
                 </div>
+
+
+
+
             </div>
 
-            {/* Sobre */}
+
             <div id="about" className="bg-[#700561] h-[1500px] rounded-t-[20px] mt-[-150px] flex flex-col">
                 <div className="flex items-center justify-between mx-[120px]">
                     <div className="text-complementary-white mt-[50px]">
@@ -79,10 +96,21 @@ export const Landing = () => {
                         <br />
                         para o futuro.
                     </p>
+
+                    <iframe
+                        className="mt-5 rounded-[20px] shadow-lg"
+                        width="1040"
+                        height="660"
+                        src="https://drive.google.com/file/d/1WzgHV-PDNLL3gvQf8gGoA5FqoYFdIk9s/view"
+                        title="YouTube video"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
                 </div>
             </div>
 
-            {/* Como Ajudar */}
+
             <div id="howHelp" className="items-center justify-center flex flex-col gap-[100px]">
                 <h1 className="font-dynapuff text-[60px] text-[#700561] font-bold">
                     Como funciona a sua ajuda
@@ -137,13 +165,56 @@ export const Landing = () => {
                 })}
 
                 {/* Formas Adicionais de Ajuda */}
+                {/* Formas Adicionais de Ajuda */}
                 <h1 className="font-dynapuff text-[60px] text-[#700561] text-center font-bold">
                     Outras formas de ajuda que <br /> são bem-vindas
                 </h1>
                 <div className="flex gap-[30px]">
-                    {/* Componentes reutilizáveis */}
+                    <div className="flex flex-col gap-[50px]">
+                        <div className="w-[333px] h-[336px] bg-[#700561] rounded-[20px] flex flex-col items-center justify-center">
+                            <FontAwesomeIcon className="text-[#FC8917] text-[60px]" icon={faSquarePlus} />
+                            <h1 className="font-dynapuff text-[42px] text-center text-[#FC8917] font-bold">Divulgando a ONG</h1>
+                        </div>
+                        <div className="w-[333px] h-[336px] bg-[#FC8917] rounded-[20px] flex flex-col items-center justify-center">
+                            <FontAwesomeIcon className="text-[#700561] text-[60px]" icon={faBowlFood} />
+                            <h1 className="font-dynapuff text-[42px] text-center text-[#700561] font-bold">Doação de alimentos</h1>
+                        </div>
+                        <div className="w-[333px] h-[336px] bg-[#700561] rounded-[20px] flex flex-col items-center justify-center">
+                            <FontAwesomeIcon className="text-[#FC8917] text-[60px]" icon={faPumpSoap} />
+                            <h1 className="font-dynapuff text-[42px] text-center text-[#FC8917] font-bold">Doação de alimentos</h1>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-[50px] mt-[50px]">
+                        <div className="w-[333px] h-[336px] bg-[#FC8917] rounded-[20px] flex flex-col items-center justify-center">
+                            <FontAwesomeIcon className="text-[#700561] text-[60px]" icon={faShirt} />
+                            <h1 className="font-dynapuff text-[42px] text-center text-[#700561] font-bold">Doação de roupas e calçados</h1>
+                        </div>
+                        <img className="w-[333px] h-[336px] bg-[#700561] rounded-[20px] flex flex-col items-center justify-center" src={carrouselImage} alt="" />
+                        <div className="w-[333px] h-[336px] bg-[#FC8917] rounded-[20px] flex flex-col items-center justify-center">
+                            <FontAwesomeIcon className="text-[#700561] text-[60px]" icon={faMobile} />
+                            <h1 className="font-dynapuff text-[42px] text-center text-[#700561] font-bold">Doação de eletrônicos</h1>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-[50px]">
+                        <div className="w-[333px] h-[336px] bg-[#700561] rounded-[20px] flex flex-col items-center justify-center">
+                            <FontAwesomeIcon className="text-[#FC8917] text-[60px]" icon={faBook} />
+                            <h1 className="font-dynapuff text-[42px] text-center text-[#FC8917] font-bold">Doação de livros</h1>
+                        </div>
+                        <div className="w-[333px] h-[336px] bg-[#FC8917] rounded-[20px] flex flex-col items-center justify-center">
+                            <FontAwesomeIcon className="text-[#700561] text-[60px]" icon={faCubes} />
+                            <h1 className="font-dynapuff text-[42px] text-center text-[#700561] font-bold">Doação de brinquedo</h1>
+                        </div>
+                        <div className="w-[333px] h-[336px] bg-[#700561] rounded-[20px] flex flex-col items-center justify-center">
+                            <FontAwesomeIcon className="text-[#FC8917] text-[60px]" icon={faHandshakeAngle} />
+                            <h1 className="font-dynapuff text-[42px] text-center text-[#FC8917] font-bold">Voluntariado</h1>
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
+
+
 
             {/* Jogo */}
             <section>

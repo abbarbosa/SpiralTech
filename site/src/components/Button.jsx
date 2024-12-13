@@ -1,5 +1,6 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { faArrowRight, faDoorOpen } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Link } from "react-router-dom";
 
 
 
@@ -34,17 +35,28 @@ export const ButtonLanding = (props) => {
 };
 
 
+export const ButtonExit = (props) => {
+    return (
+        <div>
+            <button className={`rounded-full border-[#700561]  text-[#700561]  border w-12 h-12  hover:text-[#3f2a3c] ${props.styles}`
+            }>
+                <FontAwesomeIcon icon={faDoorOpen} />
+            </button>
+        </div>
+    )
+}
+
 
 export const ButtonLogin = (props) => {
-    return ( 
+    return (
         <button className={`rounded-full border-primary-purple border w-12 h-12 text-complementary-white hover:text-primary-purple ${props.styles}`}>
             {props.children}
         </button>
     )
 }
 
-export const ButtonLink = (props) =>{
-    return(
+export const ButtonLink = (props) => {
+    return (
         <button className={`text-[20px] underline decoration-primary-purple ${props.styles}`}>
             {props.children}
         </button>

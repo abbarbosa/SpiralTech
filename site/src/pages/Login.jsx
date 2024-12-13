@@ -14,7 +14,7 @@ export const Login = () => {
                 </Link>
                 <h1 className="text-[60px] text-complementary-white mt-[60px]">Fazer login</h1>
 
-                <p className="text-[27px] text-complementary-white mt-[50px]">Área restrita apenas <br /> para colaboradores e <br /> funcionários.</p>
+                <p className="text-[27px] text-complementary-white mt-[50px]"> <span className="font-semibold">Área restrita</span> apenas <br /> para <span className="font-semibold">colaboradores</span>  e <br /> <span className="font-semibold">funcionários</span>.</p>
 
                 <ButtonLink styles="text-[20px] text-complementary-white mt-[50px]">Primeiro acesso</ButtonLink>
 
