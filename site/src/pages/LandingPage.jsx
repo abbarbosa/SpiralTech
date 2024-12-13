@@ -101,7 +101,7 @@ export const Landing = () => {
                         className="mt-5 rounded-[20px] shadow-lg"
                         width="1040"
                         height="660"
-                        src="https://drive.google.com/file/d/1WzgHV-PDNLL3gvQf8gGoA5FqoYFdIk9s/view"
+                        src="https://youtu.be/51VaXjbIeaA"
                         title="YouTube video"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
