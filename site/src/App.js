@@ -5,8 +5,6 @@ import { Solutions } from "./pages/Solutions";
 import { Landing } from "./pages/LandingPage";
 import { Login } from "./pages/Login";
 
-import { SpeedInsights } from "@vercel/speed-insights/next"
-
 function App() {
   return (
     <div>
