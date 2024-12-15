@@ -20,6 +20,7 @@ import { Link } from "react-router-dom";
 
 import { ReactComponent as Logo } from "../assets/logoCampanha.svg"
 import { ReactComponent as Icon } from "../assets/icon.svg"
+import VideoComponent from "../components/Video";
 
 
 export const Landing = () => {
@@ -100,9 +101,7 @@ export const Landing = () => {
                         para o futuro.
                     </p>
 
-                    <video src="">
-
-                    </video>
+                    <VideoComponent/>
 
                 </div>
             </div>
