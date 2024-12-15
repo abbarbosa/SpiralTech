@@ -31,14 +31,14 @@ export const Landing = () => {
     };
 
     return (
-        <div className="gap-[120px] flex flex-col">
+        <div className="gap-[120px] flex flex-col w-screen">
             <div
-                className="h-screen flex items-start bg-cover bg-center bg-no-repeat"
+                className="h-screen w-screen flex items-start bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${LandingImage})` }}
             >
 
 
-                <div className="bg-complementary-white h-[125px] w-screen rounded-b-[20px] flex gap-[50px] items-center pl-[120px] text-[#700561] font-dynapuff text-[30px] justify-between">
+                <div className="bg-complementary-white h-[125px] w-screen rounded-b-[20px] flex gap-[50px] items-center pl-[100px] text-[#700561] font-dynapuff text-[30px] justify-between">
                     <div className="gap-[50px] flex items-center">
                         <Icon />
                         <button
@@ -75,8 +75,8 @@ export const Landing = () => {
             </div>
 
 
-            <div id="about" className="bg-[#700561] h-[1500px] rounded-t-[20px] mt-[-150px] flex flex-col">
-                <div className="flex items-center justify-between mx-[120px]">
+            <div id="about" className="bg-[#700561] w-screen h-[1500px] rounded-t-[20px] mt-[-150px] flex flex-col">
+                <div className="flex items-center justify-center gap-[600px]">
                     <div className="text-complementary-white mt-[50px] flex flex-col items-start justify-start">
                         <h1>Spiral Tech apresenta:</h1>
                         <Logo className="h-[35px]" />

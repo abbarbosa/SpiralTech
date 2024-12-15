@@ -7,7 +7,7 @@ import { Footer } from "../components/Footer"
 
 export const Contact = () => {
     return (
-        <div className="bg-gradient-to-b from-primary-blue to-primary-purple h-screen flex flex-col">
+        <div className="bg-gradient-to-b from-primary-blue to-primary-purple h-screen flex flex-col w-screen">
             <div className="flex-grow flex flex-row items-center gap-[190px]">
                 <div className="absolute top-4 right-4 z-10">
                     <Link to="/login">
@@ -17,10 +17,10 @@ export const Contact = () => {
                     </Link>
                 </div>
                 <div>
-                    <div className="flex gap-[20px] justify-center mt-[50px]">
+                    <div className="flex gap-[20px] justify-center mt-[50px] w-screen">
                         <Header styles="ml-[120px]" />
 
-                        <div className="flex items-center justify-between w-[1500px]">
+                        <div className="flex items-center justify-center gap-[25%] w-screen">
                             <div>
                                 <h1 className="font-semibold text-[60px] text-complementary-white">Se interessou?</h1>
                                 <p className="text-[27px] text-complementary-white">
@@ -56,9 +56,7 @@ export const Contact = () => {
                                         className="border rounded-[20px] bg-transparent border-primary-purple h-[237px] w-[303px] text-start"
                                         placeholder="   Deixe sua mensagem"
                                     />
-                                    <Link to="/sorrisos-do-amanha">
-                                        <Button styles="bg-complementary-white">Enviar</Button>
-                                    </Link>
+                                    <Button styles="bg-complementary-white">Enviar</Button>
                                 </form>
                             </div>
                         </div>

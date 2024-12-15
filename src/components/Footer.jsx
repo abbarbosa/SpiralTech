@@ -6,7 +6,7 @@ import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 export const Footer = () => {
     return (
-        <div className="bg-complementary-white w-[100%] h-[328px] border-t-2 rounded-tl-[20px] rounded-tr-[20px] flex items-center justify-between gap-[200px] px-[250px] py-[5px] text-primary-blue">
+        <div className="bg-complementary-white w-screen h-[328px] border-t-2 rounded-tl-[20px] rounded-tr-[20px] flex items-center justify-between gap-[200px] px-[250px] py-[5px] text-primary-blue">
             <div className="flex gap-[40px] flex-col">
                 <img src={ColorfullLogotype} className="h-[90px] w-[157px]" alt="" />
                 <Link to="/login">
