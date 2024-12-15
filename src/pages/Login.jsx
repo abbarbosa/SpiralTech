@@ -2,10 +2,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, ButtonLink, ButtonLogin } from "../components/Button";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import Modal from "../components/Modal"
+import { useState } from "react";
 
 
 export const Login = () => {
-   
+
+    const [isOpen, setIsOpen] = useState(false)
+
     return (
         <div className="flex items-center justify-center gap-[300px] h-screen bg-gradient-to-b from-primary-blue to-primary-purple">
             <div className="flex flex-col items-start">
@@ -41,6 +45,7 @@ export const Login = () => {
                     />
                     <ButtonLink
                         styles="text-[20px] text-complementary-white text-start"
+                        onClick={() =>{setIsOpen(true)}}
                     >
                         Esqueceu a senha
                     </ButtonLink>
@@ -49,6 +54,13 @@ export const Login = () => {
                     </Link>
                 </form>
             </div>
+
+            <Modal
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+                title={"Esqueceu a senha?"}
+                description={"Se esqueceu a sua senha, entre em contato com a equipe de segurança da empresa."}
+            />
         </div>
     );
 };

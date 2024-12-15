@@ -57,7 +57,10 @@ export const ButtonLogin = (props) => {
 
 export const ButtonLink = (props) => {
     return (
-        <button className={`text-[20px] underline decoration-primary-purple ${props.styles}`}>
+        <button
+            onClick={props.onClick}
+            type="button"
+            className={`text-[20px] underline decoration-primary-purple ${props.styles}`}>
             {props.children}
         </button>
     )
