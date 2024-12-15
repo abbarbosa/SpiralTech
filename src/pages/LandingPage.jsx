@@ -18,6 +18,9 @@ import { LandingFotter } from "../components/Footer";
 import { Link } from "react-router-dom";
 
 
+import { ReactComponent as Logo } from "../assets/logoCampanha.svg"
+import { ReactComponent as Icon } from "../assets/icon.svg"
+
 
 export const Landing = () => {
     const scrollToSection = (id) => {
@@ -29,7 +32,6 @@ export const Landing = () => {
 
     return (
         <div className="gap-[120px] flex flex-col">
-
             <div
                 className="h-screen flex items-start bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${LandingImage})` }}
@@ -37,7 +39,8 @@ export const Landing = () => {
 
 
                 <div className="bg-complementary-white h-[125px] w-screen rounded-b-[20px] flex gap-[50px] items-center pl-[120px] text-[#700561] font-dynapuff text-[30px] justify-between">
-                    <div className="gap-[50px] flex">
+                    <div className="gap-[50px] flex items-center">
+                        <Icon />
                         <button
                             onClick={() => scrollToSection("about")}
                             className="hover:underline hover:decoration-[#700561] underline-offset-[5px] font-bold"
@@ -74,9 +77,9 @@ export const Landing = () => {
 
             <div id="about" className="bg-[#700561] h-[1500px] rounded-t-[20px] mt-[-150px] flex flex-col">
                 <div className="flex items-center justify-between mx-[120px]">
-                    <div className="text-complementary-white mt-[50px]">
+                    <div className="text-complementary-white mt-[50px] flex flex-col items-start justify-start">
                         <h1>Spiral Tech apresenta:</h1>
-                        <h1 className="text-[35px] font-dynapuff">Sorrisos do Amanhã</h1>
+                        <Logo className="h-[35px]" />
                     </div>
                     <ButtonLanding
                         styles="border-complementary-white text-[#FC8917] hover:bg-[#FC8917] hover:text-[#700561] hover:border-transparent font-bold"
@@ -86,7 +89,7 @@ export const Landing = () => {
                     </ButtonLanding>
                 </div>
 
-                <div className="flex justify-center flex-col items-center gap-5">
+                <div className="flex justify-center flex-col items-center gap-5 mt-[100px]">
                     <h1 className="font-dynapuff text-[60px] text-[#FC8917] font-bold">Fique por dentro</h1>
                     <h2 className="font-dynapuff text-[36px] text-[#FC8917] mt-[50px]">Olá colaborador</h2>
                     <p className="font-dynapuff text-[30px] text-center text-[#FC8917]">
@@ -97,16 +100,10 @@ export const Landing = () => {
                         para o futuro.
                     </p>
 
-                    <iframe
-                        className="mt-5 rounded-[20px] shadow-lg"
-                        width="1040"
-                        height="660"
-                        src="https://youtu.be/51VaXjbIeaA"
-                        title="YouTube video"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    ></iframe>
+                    <video src="">
+
+                    </video>
+
                 </div>
             </div>
 
