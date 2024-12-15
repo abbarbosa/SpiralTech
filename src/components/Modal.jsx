@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ButtonLink } from './Button';
+import { Button, ButtonBg, ButtonLink } from './Button';
 
 const Modal = ({ isOpen, setIsOpen, title, description }) => {
 
@@ -9,7 +9,7 @@ const Modal = ({ isOpen, setIsOpen, title, description }) => {
         <h1 className='text-[60px] text-complementary-white'>{title}</h1>
         <p className='w-[500px] text-center text-complementary-white text-[27px]'>{description}
         </p>
-        <Button styles="text-complementary-white border-primary-white bg-primary-purple">Entrar em contato</Button>
+        <ButtonBg>Entrar em contato</ButtonBg>
         <ButtonLink styles="text-complementary-white" onClick={() => { setIsOpen(false) }} >Fechar</ButtonLink>
       </div>
     </div>

@@ -10,6 +10,8 @@ export const Login = () => {
 
     const [isOpen, setIsOpen] = useState(false)
 
+    const [isOpenSecondary, setIsOpenDSecondary] = useState(false)
+
     return (
         <div className="flex items-center justify-center gap-[300px] h-screen bg-gradient-to-b from-primary-blue to-primary-purple">
             <div className="flex flex-col items-start">
@@ -28,6 +30,7 @@ export const Login = () => {
 
                 <ButtonLink
                     styles="text-[20px] text-complementary-white mt-[50px]"
+                    onClick={() => { setIsOpenDSecondary(true) }}
                 >
                     Primeiro acesso
                 </ButtonLink>
@@ -45,7 +48,7 @@ export const Login = () => {
                     />
                     <ButtonLink
                         styles="text-[20px] text-complementary-white text-start"
-                        onClick={() =>{setIsOpen(true)}}
+                        onClick={() => { setIsOpen(true) }}
                     >
                         Esqueceu a senha
                     </ButtonLink>
@@ -60,6 +63,13 @@ export const Login = () => {
                 setIsOpen={setIsOpen}
                 title={"Esqueceu a senha?"}
                 description={"Se esqueceu a sua senha, entre em contato com a equipe de segurança da empresa."}
+            />
+
+            <Modal
+                isOpen={isOpenSecondary}
+                setIsOpen={setIsOpenDSecondary}
+                title={"Primeiro acesso?"}
+                description={"Caso seja seu primeiro acesso entre em contato com a seção de recursos humanos"}
             />
         </div>
     );

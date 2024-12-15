@@ -17,6 +17,18 @@ export const Button = (props) => {
     )
 }
 
+
+export const ButtonBg = (props) => {
+    return (
+        <button className="flex items-center justify-center gap-5 text-complementary-white bg-[#937AFA] h-[50px] w-[306px] rounded-[20px]  ">
+            {props.children}
+            <div className={`flex items-center justify-center -rotate-45 border rounded-full  bg-primary-purple h-9 w-9 text-4  ${props.styles}`}>
+                <FontAwesomeIcon icon={faArrowRight} />
+            </div>
+        </button>
+    )
+}
+
 export const ButtonLanding = (props) => {
     return (
         <button
