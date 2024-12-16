@@ -2,7 +2,7 @@ import { Footer } from "../components/Footer"
 import SolutionsImage from "../assets/SolutionsImage.png"
 import { Header } from "../components/Header"
 import { Link } from "react-router-dom"
-import { ButtonLogin } from "../components/Button"
+import { Button, ButtonLogin } from "../components/Button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser } from "@fortawesome/free-solid-svg-icons"
 
@@ -90,6 +90,11 @@ export const Solutions = (props) => {
                         <p className="text-complementary-white text-center">Área da<span className="font-semibold">tecnologia</span> que <br /> <span className="font-semibold">desenvolve sistemas</span> <br /> capazes de <span className="font-semibold">realizar <br />tarefas</span> que simulam a <br /> <span className="font-semibold">inteligência humana</span>
                         </p>
                     </div>
+                </div>
+
+                <div className="items-center justify-center flex flex-col mt-[100px] gap-[60px] mb-[120px]">
+                    <h1 className="text-[32px] md:text-[48px] lg:text-[60px] font-semibold text-center md:text-left text-complementary-white">Se interessou?</h1>
+                    <Button>Entrar em contato</Button>
                 </div>
 
             </div>

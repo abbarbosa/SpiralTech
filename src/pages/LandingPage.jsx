@@ -101,7 +101,7 @@ export const Landing = () => {
                         para o futuro.
                     </p>
 
-                    <VideoComponent/>
+                    <VideoComponent />
 
                 </div>
             </div>
@@ -226,7 +226,10 @@ export const Landing = () => {
                     <h2 className="font-dynapuff text-[36px] text-[#700561] text-center mt-[50px] font-bold">
                         Aprenda enquanto se diverte
                     </h2>
-                    <ButtonLanding>Jogar</ButtonLanding>
+                    <a href="https://www.construct.net/en/free-online-games/sorrisos-71677/play" target="blank">
+                        <ButtonLanding>Jogar</ButtonLanding>
+                    </a>
+
                 </div>
             </section>
 
