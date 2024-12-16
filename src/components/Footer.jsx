@@ -13,7 +13,7 @@ export const Footer = () => {
                     <Button>Login</Button>
                 </Link>
                 <div className="gap-[40px] flex flex-row">
-                    <a href="https://www.instagram.com/">
+                    <a href="https://www.instagram.com/spiral.tech_/" target="blank">
                         <button
                             className="text-primary-blue text-[40px] hover:bg-slate-300 rounded-full h-[50px] w-[50px] justify-center items-center flex"
                         >
